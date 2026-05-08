@@ -2,10 +2,34 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Привет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino Program Studio</title>
 </head>
 <body>
-  <h1>Привет</h1>
+  <h1>Arduino Program Studio</h1>
+
+  <p>Простая страница для программирования Arduino Uno и Nano</p>
+
+  <textarea rows="12" cols="50">
+void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}
+  </textarea>
+
+  <br><br>
+
+  <button onclick="alert('Код отправлен на Arduino!')">
+    Загрузить код
+  </button>
+
+  <br><br>
 
   <button onclick="window.location.href='https://www.instagram.com/danil__2023_?igsh=MXNtaGlpbDNhYTJ5NA=='">
     Перейти в Instagram
